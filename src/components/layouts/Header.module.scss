@@ -1,0 +1,21 @@
+.wrapper {
+  height: fit-content;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  z-index: 2;
+  ul {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+  }
+  li {
+    font-size: small;
+    color: #cfcece;
+    display: inline;
+    margin: 0px 20px;
+  }
+}
