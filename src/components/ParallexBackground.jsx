@@ -92,7 +92,7 @@ export function ParallexBackground() {
         )}
       </div>
 
-      <div id="title" className={cx(styles.title, "px-24")}>
+      <div id="title" className={cx(styles.title, "px-24 pt-32")}>
         <h1 className="lg:text-7xl sm:text-3xl font-bold text-white">
           All Apple Originals.
         </h1>
