@@ -76,7 +76,7 @@ export function ParallexBackground() {
   // }, []);
 
   return (
-    <div>
+    <div className="">
       <div className={styles.fullScreen} id="parallex">
         {url && (
           <ReactPlayer
@@ -93,10 +93,14 @@ export function ParallexBackground() {
       </div>
 
       <div id="title" className={cx(styles.title, "px-24")}>
-        <h1 className="text-7xl font-bold">All Apple Originals.</h1>
-        <h1 className="text-7xl font-bold">Only on Apple TV+.</h1>
-        <button className="my-20">Stream Now</button>
-        <p className="text-lg flex items-center">
+        <h1 className="lg:text-7xl sm:text-3xl font-bold text-white">
+          All Apple Originals.
+        </h1>
+        <h1 className="lg:text-7xl sm:text-3xl font-bold text-white">
+          Only on Apple TV+.
+        </h1>
+        <button className="lg:my-20 sm:my-10 text-white">Stream Now</button>
+        <p className="text-lg flex items-center text-white">
           Watch on the
           <span className="mx-2">
             <Image
@@ -116,7 +120,7 @@ export function ParallexBackground() {
         </p>
       </div>
 
-      <div id="paragraph" className={cx(styles.paragraph, "px-52 py-10")}>
+      <div id="paragraph" className={cx(styles.paragraph, "px-52 py-10 text-white")}>
         <p className="text-5xl font-bold">
           New Apple Originals every month - always ad-free.
         </p>

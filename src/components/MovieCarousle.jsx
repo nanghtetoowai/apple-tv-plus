@@ -29,6 +29,7 @@ export default class MovieCarousel extends Component {
             color: "#EBEDEF",
             width: 50,
             height: 50,
+            zIndex: 9,
           }}
           onClick={onClick}
         />
@@ -95,6 +96,31 @@ export default class MovieCarousel extends Component {
       autoplaySpeed: 2800,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 1,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
     };
 
     const settings2 = {
@@ -104,7 +130,7 @@ export default class MovieCarousel extends Component {
       play: this.state.autoPlay,
       speed: 2000,
       autoplaySpeed: 1000,
-      pauseOnHover:true,
+      pauseOnHover: true,
       nextArrow: <HiddenSampleNextArrow className="hidden" />,
       prevArrow: <HiddenSamplePrevArrow className="hidden" />,
     };
@@ -116,7 +142,7 @@ export default class MovieCarousel extends Component {
       play: this.state.autoPlay,
       speed: 2500,
       autoplaySpeed: 800,
-      pauseOnHover:true,
+      pauseOnHover: true,
       nextArrow: <HiddenSampleNextArrow className="hidden" />,
       prevArrow: <HiddenSamplePrevArrow className="hidden" />,
     };
@@ -225,7 +251,7 @@ export default class MovieCarousel extends Component {
 
         <div className="flex justify-center mt-10">
           <div className="flex justify-center w-4/5">
-            <button className="flex items-center border border-white rounded-full py-2 px-3">
+            <button className="flex items-center border border-white rounded-full py-2 px-3 text-white">
               See full lineup <FaChevronRight />
             </button>
           </div>

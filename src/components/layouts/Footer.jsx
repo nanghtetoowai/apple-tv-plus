@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import styles from "./Footer.module.scss";
 import { FaApple } from "react-icons/fa";
+import cx from 'classnames';
 
 export function Footer() {
   return (
@@ -57,7 +58,7 @@ export function Footer() {
         </ul>
       </div>
 
-      <div className={styles.linkSection}>
+      <div className={cx(styles.linkSection,'')}>
         <div>
           <h4 className="font-bold">Shop and Learn</h4>
           <ul>

@@ -1,10 +1,8 @@
 .parallex {
   /* The image used */
   background-image: url("/images/tv-plus-bg.mp4");
-
   /* Set a specific height */
   min-height: 500px;
-
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -13,7 +11,7 @@
 }
 .title {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 10%;
   color: #fff;
   // font-size: 40px;

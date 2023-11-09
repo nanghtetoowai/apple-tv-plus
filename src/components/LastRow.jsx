@@ -48,7 +48,7 @@ export function LastRow() {
             src="/images/air_play.jpg"
             width={539}
             height={600}
-            style={{ height: 540, width: "100%" }}
+            style={{ height: 532, width: "100%" }}
             className={styles.img2}
           />
         </div>

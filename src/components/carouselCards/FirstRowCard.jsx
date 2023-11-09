@@ -11,7 +11,7 @@ export function FirstRowCard({ category, title, link }) {
       }}
     >
       <div
-        className="flex justify-between items-center space-x-5 w-full px-5"
+        className="flex justify-between items-center space-x-5 w-full px-5 text-white"
         style={{ width: '100%', position: "relative", top: "85%" }}
       >
         <p className="text-3xl font-semibold">
